@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		C58A0FEC2916925200ACA9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A0FEB2916925200ACA9C9 /* AppDelegate.swift */; };
 		C58A0FEE2916925200ACA9C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A0FED2916925200ACA9C9 /* SceneDelegate.swift */; };
-		C58A0FF02916925200ACA9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A0FEF2916925200ACA9C9 /* ViewController.swift */; };
 		C58A0FF52916925300ACA9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58A0FF42916925300ACA9C9 /* Assets.xcassets */; };
 		C58A10022916938800ACA9C9 /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A10012916938800ACA9C9 /* CompanyModel.swift */; };
 		C58A10072916959900ACA9C9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A10062916959900ACA9C9 /* Network.swift */; };
 		C58A1009291695B900ACA9C9 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A1008291695B900ACA9C9 /* NetworkDataFetch.swift */; };
+		C58A100D2916D68B00ACA9C9 /* EmployeesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A100C2916D68B00ACA9C9 /* EmployeesVC.swift */; };
+		C58A100F2916D6BD00ACA9C9 /* EmployeesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A100E2916D6BD00ACA9C9 /* EmployeesConfigurator.swift */; };
+		C58A10112916D70200ACA9C9 /* EmployeesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A10102916D70200ACA9C9 /* EmployeesPresenter.swift */; };
+		C58A10142916D7F400ACA9C9 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A10132916D7F400ACA9C9 /* EmployeeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C58A0FE82916925200ACA9C9 /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58A0FEB2916925200ACA9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C58A0FED2916925200ACA9C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C58A0FEF2916925200ACA9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C58A0FF42916925300ACA9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C58A0FF92916925300ACA9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58A10012916938800ACA9C9 /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
 		C58A10062916959900ACA9C9 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C58A1008291695B900ACA9C9 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		C58A100C2916D68B00ACA9C9 /* EmployeesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesVC.swift; sourceTree = "<group>"; };
+		C58A100E2916D6BD00ACA9C9 /* EmployeesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesConfigurator.swift; sourceTree = "<group>"; };
+		C58A10102916D70200ACA9C9 /* EmployeesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesPresenter.swift; sourceTree = "<group>"; };
+		C58A10132916D7F400ACA9C9 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +67,9 @@
 				C58A10052916958D00ACA9C9 /* Extensions */,
 				C58A10002916936100ACA9C9 /* Services */,
 				C58A0FFF2916934B00ACA9C9 /* Models */,
+				C58A100A2916D65E00ACA9C9 /* Modules */,
 				C58A0FEB2916925200ACA9C9 /* AppDelegate.swift */,
 				C58A0FED2916925200ACA9C9 /* SceneDelegate.swift */,
-				C58A0FEF2916925200ACA9C9 /* ViewController.swift */,
 				C58A0FF42916925300ACA9C9 /* Assets.xcassets */,
 				C58A0FF92916925300ACA9C9 /* Info.plist */,
 			);
@@ -100,6 +106,33 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C58A100A2916D65E00ACA9C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C58A100B2916D67700ACA9C9 /* Employees */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C58A100B2916D67700ACA9C9 /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				C58A10122916D75A00ACA9C9 /* View */,
+				C58A100E2916D6BD00ACA9C9 /* EmployeesConfigurator.swift */,
+				C58A10102916D70200ACA9C9 /* EmployeesPresenter.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		C58A10122916D75A00ACA9C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C58A10132916D7F400ACA9C9 /* EmployeeCell.swift */,
+				C58A100C2916D68B00ACA9C9 /* EmployeesVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58A10072916959900ACA9C9 /* Network.swift in Sources */,
+				C58A100F2916D6BD00ACA9C9 /* EmployeesConfigurator.swift in Sources */,
+				C58A100D2916D68B00ACA9C9 /* EmployeesVC.swift in Sources */,
+				C58A10142916D7F400ACA9C9 /* EmployeeCell.swift in Sources */,
 				C58A1009291695B900ACA9C9 /* NetworkDataFetch.swift in Sources */,
-				C58A0FF02916925200ACA9C9 /* ViewController.swift in Sources */,
 				C58A10022916938800ACA9C9 /* CompanyModel.swift in Sources */,
 				C58A0FEC2916925200ACA9C9 /* AppDelegate.swift in Sources */,
+				C58A10112916D70200ACA9C9 /* EmployeesPresenter.swift in Sources */,
 				C58A0FEE2916925200ACA9C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
