@@ -22,6 +22,7 @@
 		C58A101A291748A200ACA9C9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58A1019291748A200ACA9C9 /* String+Ext.swift */; };
 		C598D1CC29175648009981F3 /* FontModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598D1CB29175648009981F3 /* FontModels.swift */; };
 		C598D1CE29175714009981F3 /* InsetsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598D1CD29175714009981F3 /* InsetsModel.swift */; };
+		C5B35179291828C500DA9A8D /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B35178291828C500DA9A8D /* Cash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		C58A1019291748A200ACA9C9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		C598D1CB29175648009981F3 /* FontModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontModels.swift; sourceTree = "<group>"; };
 		C598D1CD29175714009981F3 /* InsetsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsModel.swift; sourceTree = "<group>"; };
+		C5B35178291828C500DA9A8D /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				C58A101529170E5600ACA9C9 /* UIColor+Ext.swift */,
 				C58A1017291747F500ACA9C9 /* UINavigationController+Ext.swift */,
 				C58A1019291748A200ACA9C9 /* String+Ext.swift */,
+				C5B35178291828C500DA9A8D /* Cash.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				C58A100F2916D6BD00ACA9C9 /* EmployeesConfigurator.swift in Sources */,
 				C58A100D2916D68B00ACA9C9 /* EmployeesVC.swift in Sources */,
 				C58A10142916D7F400ACA9C9 /* EmployeeCell.swift in Sources */,
+				C5B35179291828C500DA9A8D /* Cash.swift in Sources */,
 				C58A1009291695B900ACA9C9 /* NetworkDataFetch.swift in Sources */,
 				C58A101A291748A200ACA9C9 /* String+Ext.swift in Sources */,
 				C58A10022916938800ACA9C9 /* CompanyModel.swift in Sources */,

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol EmployeesViewInput: AnyObject {
-    func setup(employees: [Employee], title: String)
+    func setup(employees: [Employee]?, title: String, cachedData: Company?)
 }
 
 final class EmployeesVC: UIViewController {
@@ -114,13 +114,30 @@ extension EmployeesVC: UICollectionViewDelegateFlowLayout {
 
 extension EmployeesVC: EmployeesViewInput {
     
-    func setup(employees: [Employee], title: String) {
-        if refreshControl.isRefreshing {
-            refreshControl.endRefreshing()
+    func setup(employees: [Employee]?, title: String, cachedData: Company?) {
+        guard let presenter else { return }
+        guard let employees else {
+            let alertController = presenter.errorLoadingAlert {[weak self] (action) in
+                guard let self else { return }
+                self.refreshControl.endRefreshing()
+                if self.employees.isEmpty == false {
+                    self.collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+                }
+                // Show Cached data
+                self.title = cachedData?.name
+                self.navigationController?.setTitle(with: .black)
+                self.employees = cachedData?.employees ?? []
+            } retryActionHandler: {[weak self] (action) in
+                self?.presenter?.viewIsReady()
+            }
+            navigationController?.present(alertController, animated: true)
+            return
         }
+        self.refreshControl.endRefreshing()
         self.title = title
         navigationController?.setTitle(with: .black)
         self.employees = employees
     }
+    
     
 }
