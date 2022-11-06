@@ -15,7 +15,7 @@ final class Network: NetworkProtocol {
     
     static let v4 = "v3"
     
-    func request(searchTerm: String = "1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c", completion: @escaping (Result<Data, Error>?) -> Void) {
+    func request(searchTerm: String = "585b6d8a-b80e-436e-8298-126e92c9c630", completion: @escaping (Result<Data, Error>?) -> Void) {
         let url = self.url(searchTerm: searchTerm)
         var request = URLRequest(url: url)
         request.httpMethod = "get"
