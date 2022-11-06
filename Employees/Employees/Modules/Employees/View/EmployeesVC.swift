@@ -120,7 +120,7 @@ extension EmployeesVC: EmployeesViewInput {
             let alertController = presenter.errorLoadingAlert {[weak self] (action) in
                 guard let self else { return }
                 self.refreshControl.endRefreshing()
-                if self.employees.isEmpty == false {
+                if self.employees.isEmpty == false { // баг фикс - иногда рефреш контрол не исчезает пока не промотать коллекшн вью
                     self.collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
                 }
                 // Show Cached data
